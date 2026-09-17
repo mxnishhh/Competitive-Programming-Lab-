@@ -8,13 +8,11 @@ for i in range(n):
 
 threshold = float(input("Enter attendance threshold: "))
 
-# 1. Count below threshold
 count = 0
 for a in attendance:
     if a < threshold:
         count += 1
 
-# 2. Lowest attendance and position
 lowest = attendance[0]
 position = 0
 
@@ -23,7 +21,7 @@ for i in range(1, n):
         lowest = attendance[i]
         position = i
 
-# 3. Average attendance
+
 total = 0
 for a in attendance:
     total += a
