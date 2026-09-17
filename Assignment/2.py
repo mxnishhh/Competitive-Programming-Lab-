@@ -6,7 +6,7 @@ for i in range(n):
     p = int(input("Enter patients in hour " + str(i + 1) + ": "))
     patients.append(p)
 
-# 1. Maximum patients and hour
+
 maximum = patients[0]
 max_hour = 1
 
@@ -15,24 +15,23 @@ for i in range(1, n):
         maximum = patients[i]
         max_hour = i + 1
 
-# 2. Minimum patients
+
 minimum = patients[0]
 
 for p in patients:
     if p < minimum:
         minimum = p
 
-# 3. Peak hour
 peak_hour = max_hour
 
-# 4. Average
+
 total = 0
 for p in patients:
     total += p
 
 average = total / n
 
-# Count hours above average
+
 above_average = 0
 
 for p in patients:
